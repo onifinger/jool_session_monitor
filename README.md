@@ -5,7 +5,7 @@ jool(NAT64 component) TCP/UDP/ICMP session monitor on Zabbix
 This tool can draw graph of jool's TCP/UDP/ICMP session amount on Zabbix.  
 it's better to use in combination with cron.  
 jool is Linux kernel module as NAT64 component.
-![jool_tcp_session](https://github.com/onifinger/images/blob/master/jool_tcp_session.png)
+![jool_tcp_session](https://github.com/onifinger/images/blob/master/tcp_session.png)
 
 ## 2. Description
 I was programmed this tool for NAT64 Wi-Fi network on iOS developer's conference that have over 400 visitors.  
