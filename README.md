@@ -54,7 +54,7 @@ $ git clone https://github.com/onifinger/jool_session_monitor.git
   you can send current session amount to zabbix server by line below.
 
   ```
-  $ sh jool_session_monitor.sh
+  $ sh jool_session.sh
   ```
 
 1. use in combination with cron  
@@ -64,7 +64,7 @@ $ git clone https://github.com/onifinger/jool_session_monitor.git
   $ crontab -l
   :
   :
-  */1 * * * * /bin/sh /home/YOURNAME/jool_session_monitor.sh >>/home/YOURNAME/cron.log 2>> /home/YOURNAME/cronerr.log
+  */1 * * * * /bin/sh /home/YOURNAME/jool_session.sh >>/home/YOURNAME/cron.log 2>> /home/YOURNAME/cronerr.log
   :
   :
   ```
