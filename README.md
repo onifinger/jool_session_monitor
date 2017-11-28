@@ -7,6 +7,10 @@ it's better to use in combination with cron.
 jool is Linux kernel module as NAT64 component.
 ![jool_tcp_session](https://github.com/onifinger/images/blob/master/tcp_session.png)
 
+2017/11/28 merged pull request from http://github.com/enukane
+changing output format of jool command after ver.3.5.4.
+dealing with the above. ($2 -> $NF)
+
 ## 2. Description
 I was programmed this tool for NAT64 Wi-Fi network on iOS developer's conference that have over 400 visitors.  
 This tool send session amounts to zabbix server by using jool commands and zabbix_sender.  
@@ -71,3 +75,4 @@ $ git clone https://github.com/onifinger/jool_session_monitor.git
 
 ## 6. Licence
 MIT
+
