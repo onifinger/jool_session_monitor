@@ -8,9 +8,10 @@ YOUR_KEY_OF_UDP_ON_ZABBIX='jool.udp.session'
 YOUR_KEY_OF_ICMP_ON_ZABBIX='jool.icmp.session'
 
 # substituting TCP/UDP/ICMP session to variable
-TCP=`/usr/local/bin/jool -c --session --tcp`
-UDP=`/usr/local/bin/jool -c --session --udp`
-ICMP=`/usr/local/bin/jool -c --session --icmp`
+JOOL_CMD=`which jool`
+TCP=`${JOOL_CMD} -c --session --tcp`
+UDP=`${JOOL_CMD} -c --session --udp`
+ICMP=`${JOOL_CMD} -c --session --icmp`
 
 # run zabbix_sender
 /usr/bin/zabbix_sender -z ${YOUR_ZABBIX_IPADDR} -s ${YOUR_JOOL_HOSTNAME_ON_ZABBIX} -k ${YOUR_KEY_OF_TCP_ON_ZABBIX} -o ${TCP}
